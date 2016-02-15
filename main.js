@@ -8,7 +8,8 @@ module.exports = function(doc,options){
 		var keys = Object.keys(el);
 		keys.forEach(k=>{
 			shape[k] = shape[k] || new Set();
-			if(Array.isArray(el[k])) shape[k].add('array');
+			if(!el[k]) shape[k].add('undefined');
+			else if(Array.isArray(el[k])) shape[k].add('array');
 			else shape[k].add(typeof el[k]);
 		})
 	})

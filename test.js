@@ -17,8 +17,8 @@ describe('doc shape',()=>{
 				{a:2},
 				{b:2},
 				{a:2,b:3},
-			]	
-		)	
+			]
+		)
 		console.log(res);
 	}),
 	it('even bigger',()=>{
@@ -29,12 +29,15 @@ describe('doc shape',()=>{
 				{b:'elephant'},
 				{b:null},
 				{c:null,d:'asdf'},
-				{a:{x:1,z:'asdf',y:[1,2,3]}}
-			]	
+				{a:[]},
+				{a:{}},
+				{z:'asdf'},
+				{a:null},
+				{}
+			]
 		);
 		assert( res === Object(res));
-		assert( Object.keys(res).length === 4);
+		assert( Object.keys(res).length === 5);
 		console.log(res);
 	})
 });
-

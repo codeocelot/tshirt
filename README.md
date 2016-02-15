@@ -10,6 +10,14 @@
 		]
 	var shape = tshirt(data);
 	console.log(shape);
+  /*
+  {
+    a: Set { 'number', 'string' },
+    b: Set { 'number' },
+    c: Set { 'object' },
+    d: Set { 'array' }
+  }
+  */
 
 ## Use case inspiration
 It sucks opening a 500mb list of objects and manually enumerate the data types for each property.  Tshirt solves this by determining the shape of your documents.  
