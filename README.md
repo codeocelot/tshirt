@@ -8,8 +8,8 @@
 			{},
 			{b:42},
 		]
-		var shape = tshirt(data);
-		console.log(shape);
+	var shape = tshirt(data);
+	console.log(shape);
 
 ## Use case inspiration
 It sucks opening a 500mb list of objects and manually enumerate the data types for each property.  Tshirt solves this by determining the shape of your documents.  
