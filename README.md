@@ -16,5 +16,3 @@ It sucks opening a 500mb list of objects and manually enumerate the data types f
 
 ## Improvements
 Support nested properties.
-
-

@@ -7,14 +7,10 @@ module.exports = function(doc,options){
 	doc.forEach(el=>{
 		var keys = Object.keys(el);
 		keys.forEach(k=>{
-			if(!shape.hasOwnProperty(k)){
-				shape[k] = [typeof el[k]]
-			} else {
-				if(shape[k].indexOf(typeof el[k]) === -1){
-					shape[k].push(typeof el[k]);
-				}
-			}
-		})	
-	})	
+			shape[k] = shape[k] || new Set();
+			if(Array.isArray(el[k])) shape[k].add('array');
+			else shape[k].add(typeof el[k]);
+		})
+	})
 	return shape;
 }
