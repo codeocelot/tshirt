@@ -8,14 +8,16 @@
 			{a:{},b:42},
 			{a:[]}
 		]
-	var shape = tshirt(data);
-	console.log(shape);
-
-		 /*{ a: Set { 'number', 'string', 'object', 'array' },
-		   b: Set { 'number', 'optional' },
-			 c: Set { 'object', 'optional' },
-		   d: Set { 'array', 'optional' } 
-		 }*/
+    var shape = tshirt(data);
+    console.log(shape);
+    /*
+    { 
+    	a: Set { 'number', 'string', 'object', 'array' },
+    	b: Set { 'number', 'optional' },
+    	c: Set { 'object', 'optional' },
+    	d: Set { 'array', 'optional' } 
+    }
+    */
 
 
 ## Use case inspiration
