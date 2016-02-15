@@ -39,5 +39,18 @@ describe('doc shape',()=>{
 		assert( res === Object(res));
 		assert( Object.keys(res).length === 5);
 		console.log(res);
+	}),
+	it('report optional properties',()=>{
+		var res = shape(
+			[
+				{b:1},
+				{a:1,b:2}
+			]
+		);
+		assert( res === Object(res));
+		assert(res['a'].has('optional'));
+		assert(!res['b'].has('optional'))
+		// assert( Object.keys(res).length === 5);
+		console.log(res);
 	})
 });
