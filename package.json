@@ -1,7 +1,7 @@
 {
   "name": "doc-shape",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Figure out what your documents look like",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
